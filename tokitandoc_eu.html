@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TokiTan - Dokumentazioa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header class="bg-primary text-white text-center py-5 mb-4 shadow-sm">
+    <div class="container">
+      <h1 class="display-4 fw-bold">TokiTan - Dokumentazioa</h1>
+      <p class="lead">Erreserben kudeaketa-sistemaren gida ofiziala</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="mb-5">
+      <h2 class="mb-3">Zer da TokiTan?</h2>
+      <p>
+        Aplikazio honek erreserben kudeaketa-sistema bat da, baliabideen erabilera antolatu eta kontrolatzeko
+        diseinatua, instituzional inguru batean, hala nola udalerri batean. Erabiltzaileek hainbat baliabide – gelak,
+        plazak, tentak, eszenak, tabladoiak, aulkiak eta bestelako materialak – erreserba erregistratzea, aldaketa
+        egitea eta bertan utzi ahal izatea baimentzen dute. Administratzaileek erreserben, erabiltzaileen eta sistemako
+        estatistikak kontrol osoa dute, eta erabiltzaile arruntek beren erreserba bakarrik kudeatu ahal dituzte.
+        Aplikazioak baliabideen erabilgarritasuna ikusteko egitarau interaktibo bat eta erreserbaren berri emateko
+        denbora errealean abisu sistema bat ditu. Gainera, erabilera txosten automatikoki sortzea eta pasahitz
+        enkriptatuen bidez autentifikazio sistema segurua babesten du, guztiak barneko eta seguru ingurune batean
+        kudeatuta intraneta.
+      </p>
+    </section>
+
+    <!-- Tabla de funciones -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Funtzioen Konparaketa </h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Administratzaileak -->
+        <div class="col-md-5">
+          <div class="permiso-card">
+            <h3 class="text-accent mb-3">👑 Administratzailea</h3>
+            <ul>
+              <li>Erabiltzaile arrunta egin dezakeen guztia</li>
+              <li>Zain dauden erreserbak onartu edo ukatu</li>
+              <li>Erabiltzaileak kudeatu eta sortu</li>
+              <li>Estatistikak eta txostenak sortu</li>
+              <li>Erreserba guztiak ikusi eta filtratu</li>
+              <li>Historia globala ikusi</li>
+              <li>Materiala kudeatu eta sortu</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Erabiltzaile arrunta -->
+        <div class="col-md-5">
+          <div class="permiso-card">
+            <h3 class="text-accent mb-3">🧑 Erabiltzaile arrunta</h3>
+            <ul>
+              <li>Bere erreserbak sortu eta aldatu</li>
+              <li>Bere estatistikak kontsultatu</li>
+              <li>Erreserben egutegia ikusi</li>
+              <li>Pasahitza aldatu</li>
+              <li>Bere historia ikusi</li>
+              <li>PDF eta Excel deskargak</li>
+              <li>Erabiltzailearen manuala ikusi</li>
+              <li>NilaChat erabili</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Guía de uso -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Erabilera Gida</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Atala 1 -->
+        <!-- Atala 1 -->
+        <div class="col-md-6">
+          <a href="nuevaReserva.html" class="text-decoration-none text-white">
+            <div class="atala-card">
+              <img src="media/nuevaReserva.png" alt="Nueva nuevaReserva">
+              <div class="atala-text">
+                <h4>Erreserbak sortu</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Atala 2 -->
+        <div class="col-md-6">
+          <a href="gestionarReservas.html" class="text-decoration-none text-white">
+            <div class="atala-card">
+              <img src="media/gestionarReservas.png" alt="gestionarReservas">
+              <div class="atala-text">
+                <h4>Erreserbak kudeatu</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Atala 3 -->
+        <div class="col-md-6">
+          <a href="perfil.html" class="text-decoration-none text-white">
+            <div class="atala-card">
+              <img src="media/gestionarperfil.png" alt="gestionarperfil">
+              <div class="atala-text">
+                <h4>Nire perfila kudeatu</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5 mt-5">
+    <div class="container text-center">
+      <p class="mb-3 fw-bold">Amurrioko Udalaren erabilera esklusiborako sortutako aplikazioa</p>
+      <p class="mb-2 fw-bold">Aplicación creada para el uso exclusivo del Ayuntamiento de Amurrio</p>
+      <hr class="border-secondary my-4" />
+      <p class="mb-1"><strong>Aitor Cobo Fariñas</strong> garatua - Desarrollado por <strong>Aitor Cobo Fariñas</strong>
+      </p>
+      <a href="https://github.com/aiittoor10" target="_blank"
+        class="text-light fs-5 d-inline-flex align-items-center gap-2">
+        <i class="fab fa-github"></i> aiittoor10
+      </a>
+      <p class="mt-4 mb-0 small">©2025 Amurrioko Udala - <a class="text-light"
+          href="https://github.com/aiittoor10">Aitorrek garatua</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="nila.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

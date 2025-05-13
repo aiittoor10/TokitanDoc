@@ -1,0 +1,276 @@
+:root {
+    --gradient-bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --color-accent: #64ffda;
+    --color-text: #f0f0f0;
+    --color-muted: #aaaaaa;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --transition: 0.3s ease-in-out;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --radius: 16px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--gradient-bg);
+    color: var(--color-text);
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeInUp 1s ease-out;
+  }
+  .vh-100 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 180px;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    transition: var(--transition);
+  }
+  .logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  }
+  .lead {
+    font-size: 1.25rem;
+    color: var(--color-muted);
+    margin-bottom: 2rem;
+  }
+  
+  .idioma-btn {
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    color: var(--color-text);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius);
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+  }
+  .idioma-btn:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: scale(1.05);
+  }
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem 0;
+    color: var(--color-muted);
+    border-top: 1px solid var(--glass-border);
+    margin-top: 3rem;
+  }
+  footer p {
+    margin: 0.3rem 0;
+  }
+  footer a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px var(--color-accent);
+  }
+  
+  .nila-boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    background-color: var(--glass-bg);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+    backdrop-filter: blur(8px);
+    transition: var(--transition);
+  }
+  .nila-boton:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--color-accent);
+  }
+  .nila-boton img {
+    width: 60%;
+    height: 60%;
+  }
+  
+  .nila-chat-ventana {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 360px;
+    height: 500px;
+    background-color: #000;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: none;
+  }
+  .nila-chat-ventana iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .oculto {
+    display: none !important;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    .lead {
+      font-size: 1rem;
+    }
+    .idioma-btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+    }
+    .nila-chat-ventana {
+      width: 95%;
+      right: 2.5%;
+      height: 80vh;
+    }
+  }
+  
+  /* ===== PERMISO CARDS ===== */
+  .permiso-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1s ease forwards;
+    transition: transform 0.3s ease;
+  }
+  .permiso-card:hover {
+    transform: translateY(-5px);
+  }
+  .permiso-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .permiso-card ul li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .permiso-card ul li:last-child {
+    border-bottom: none;
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+  
+  /* ===== ATALA CARDS ===== */
+  .atala-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+  }
+  .atala-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+  .atala-card img {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+  }
+  .atala-card:hover img {
+    transform: scale(1.03);
+  }
+  
+  .atala-text {
+    flex: 1;
+    text-align: left;
+  }
+  .atala-text h4 {
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+  }
+  .atala-text p {
+    color: var(--color-text);
+    font-size: 1rem;
+  }
+
+  a .atala-card {
+    cursor: pointer;
+  }
+  a:hover .atala-card {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .atala-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .atala-text {
+      text-align: center;
+    }
+    .atala-card img {
+      width: 100%;
+    }
+  }
+  
