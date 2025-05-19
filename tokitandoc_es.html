@@ -7,5 +7,134 @@
 </head>
 <body>
     
+  <!-- Encabezado -->
+  <header class="bg-primary text-white text-center py-5 mb-4 shadow-sm">
+    <div class="container">
+      <h1 class="display-4 fw-bold">TokiTan - Documentación</h1>
+      <p class="lead">Guía oficial del sistema de gestión de reserva</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="mb-5">
+      <h2 class="mb-3">¿Qué es TokiTan?</h2>
+      <p>
+        Esta aplicación es un sistema de gestión de reservas diseñado para organizar y controlar el uso de recursos
+        en un entorno institucional, como un municipio. Permite a los usuarios registrar, modificar y cancelar reservas
+        de diversos recursos —salas, plazas, carpas, escenarios, tarimas, sillas y otros materiales—. 
+        Los administradores tienen control total sobre las reservas, los usuarios y las estadísticas del sistema,
+        mientras que los usuarios normales solo pueden gestionar sus propias reservas. 
+        La aplicación incluye un calendario interactivo para ver la disponibilidad de los recursos y un sistema de
+        avisos en tiempo real para informar sobre las reservas. 
+        Además, permite la generación automática de informes de uso y dispone de un sistema de autenticación seguro
+        mediante contraseñas encriptadas, todo gestionado dentro de un entorno intranet interno y seguro.
+      </p>
+    </section>
+
+    <!-- Tabla de funciones -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Comparativa de Funciones</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Administradores -->
+        <div class="col-md-5">
+          <div class="permiso-card">
+            <h3 class="text-accent mb-3">👑 Administrador</h3>
+            <ul>
+                <li>Puede hacer todo lo que puede hacer un usuario normal</li>
+                <li>Aprobar o rechazar reservas pendientes</li>
+                <li>Gestionar y crear usuarios</li>
+                <li>Generar estadísticas e informes</li>
+                <li>Ver y filtrar todas las reservas</li>
+                <li>Ver el historial global</li>
+                <li>Gestionar y crear material</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Usuario normal -->
+        <div class="col-md-5">
+          <div class="permiso-card">
+            <h3 class="text-accent mb-3">🧑 Usuario normal</h3>
+            <ul>
+                <li>Crear y modificar sus propias reservas</li>
+                <li>Consultar sus estadísticas</li>
+                <li>Ver el calendario de reservas</li>
+                <li>Cambiar su contraseña</li>
+                <li>Ver su historial</li>
+                <li>Descargas en PDF y Excel</li>
+                <li>Ver el manual del usuario</li>
+                <li>Usar NilaChat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Guía de uso -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Guía de Uso</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Seccion 1 -->
+        <div class="col-md-6">
+          <a href="nuevaReserva.html" class="text-decoration-none text-white">
+            <div class="atala-card">
+              <img src="media/nuevaReserva.png" alt="Nueva nuevaReserva">
+              <div class="atala-text">
+                <h4>Crear reservas</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Seccion 2 -->
+        <div class="col-md-6">
+          <a href="gestionarReservas.html" class="text-decoration-none text-white">
+            <div class="atala-card">
+              <img src="media/gestionarReservas.png" alt="gestionarReservas">
+              <div class="atala-text">
+                <h4>Gestionar reservas</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Seccion 3 -->
+        <div class="col-md-6">
+          <a href="perfil.html" class="text-decoration-none text-white">
+            <div class="atala-card">
+              <img src="media/gestionarperfil.png" alt="gestionarperfil">
+              <div class="atala-text">
+                <h4>Gestionar mi perfil</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5 mt-5">
+    <div class="container text-center">
+      <p class="mb-3 fw-bold">Amurrioko Udalaren erabilera esklusiborako sortutako aplikazioa</p>
+      <p class="mb-2 fw-bold">Aplicación creada para el uso exclusivo del Ayuntamiento de Amurrio</p>
+      <hr class="border-secondary my-4" />
+      <p class="mb-1"><strong>Aitor Cobo Fariñas</strong> garatua - Desarrollado por <strong>Aitor Cobo Fariñas</strong>
+      </p>
+      <a href="https://github.com/aiittoor10" target="_blank"
+        class="text-light fs-5 d-inline-flex align-items-center gap-2">
+        <i class="fab fa-github"></i> aiittoor10
+      </a>
+      <p class="mt-4 mb-0 small">©2025 Amurrioko Udala - <a class="text-light"
+          href="https://github.com/aiittoor10">Aitorrek garatua</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="nila.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
